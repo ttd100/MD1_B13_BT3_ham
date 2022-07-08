@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=['Polaris','Deneb','Vega','Alitair','Dubhe','Regulus']
+    let b=['Ursa Minor','Tarurus','Lyra','Aquila','Ursa Major','leo']
+    document.write(search(prompt('nhap ngoi sao can tim')))
+    function search(string) {
+        for (let i = 0; i <a.length;i++){
+            if (a[i].toLowerCase()== string.toLowerCase()){
+                return'chom sao' +b[i];
+            }
+        }
+        return 'khong tim thay ngoi sao';
+    }
+</script>
+</body>
+</html>
